@@ -1,0 +1,72 @@
+$date
+	Mon Jul  8 00:15:10 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module branch $end
+$var wire 3 ! branch_control [2:0] $end
+$var wire 1 " i_clk $end
+$var wire 1 # i_rst $end
+$var wire 32 $ imm [31:0] $end
+$var wire 32 % pc [31:0] $end
+$var wire 32 & rs1_val [31:0] $end
+$var wire 32 ' rs2_val [31:0] $end
+$var reg 1 ( ignore_curr_inst $end
+$var reg 1 ) pc_update_control $end
+$var reg 32 * pc_update_val [31:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 *
+0)
+0(
+b0 '
+b0 &
+b0 %
+b0 $
+1#
+0"
+b0 !
+$end
+#5000
+1"
+#5500
+0#
+0"
+#6000
+1"
+#6500
+0"
+#7000
+1#
+1"
+#7500
+0"
+#8000
+1"
+#8100
+b101011010010000000100101011011 *
+1)
+b10 !
+b111001110001 $
+b100101100010100101000001101110 '
+b100101100010100101000001101101 &
+b101011010001111111101011101010 %
+#8500
+0"
+#9000
+0)
+b0 *
+b0 !
+b0 $
+b0 '
+b0 &
+b101011010010000000100101011011 %
+0(
+1"
+#9101

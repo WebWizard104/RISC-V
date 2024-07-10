@@ -1,0 +1,119 @@
+$date
+	Sun Jul  7 22:56:25 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module idu $end
+$scope module inst_decode_reg_instruction $end
+$var wire 25 ! instruction_code [31:7] $end
+$var reg 5 " alu_control [4:0] $end
+$var reg 3 # func3 [2:0] $end
+$var reg 7 $ func7 [6:0] $end
+$var reg 5 % rd [4:0] $end
+$var reg 5 & rs1 [4:0] $end
+$var reg 5 ' rs2 [4:0] $end
+$upscope $end
+$upscope $end
+$scope module idu $end
+$scope module inst_decode_imm_instruction $end
+$var wire 25 ( instruction_code [31:7] $end
+$var reg 5 ) alu_control [4:0] $end
+$var reg 3 * func3 [2:0] $end
+$var reg 12 + imm [11:0] $end
+$var reg 5 , rd [4:0] $end
+$var reg 5 - rs1 [4:0] $end
+$upscope $end
+$upscope $end
+$scope module idu $end
+$scope module inst_decode_store_instruction $end
+$var wire 25 . instruction_code [31:7] $end
+$var reg 3 / func3 [2:0] $end
+$var reg 12 0 imm [11:0] $end
+$var reg 5 1 rs1 [4:0] $end
+$var reg 5 2 rs2 [4:0] $end
+$var reg 3 3 store_control [2:0] $end
+$upscope $end
+$upscope $end
+$scope module idu $end
+$scope module inst_decode_branch_instruction $end
+$var wire 25 4 instruction_code [31:7] $end
+$var reg 3 5 branch_control [2:0] $end
+$var reg 3 6 func3 [2:0] $end
+$var reg 13 7 imm [12:0] $end
+$var reg 5 8 rs1 [4:0] $end
+$var reg 5 9 rs2 [4:0] $end
+$upscope $end
+$upscope $end
+$scope module idu $end
+$scope module inst_decode_jump_instruction $end
+$var wire 32 : instruction_code [31:0] $end
+$var reg 3 ; func3 [2:0] $end
+$var reg 21 < imm [20:0] $end
+$var reg 2 = jump_control [1:0] $end
+$var reg 7 > opcode [6:0] $end
+$var reg 5 ? rd [4:0] $end
+$var reg 5 @ rs1 [4:0] $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 A i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module idu $end
+$scope module inst_decode_upperimm_instruction $end
+$var wire 32 B instruction_code [31:0] $end
+$var reg 5 C alu_control [4:0] $end
+$var reg 32 D imm [31:0] $end
+$var reg 7 E opcode [6:0] $end
+$var reg 5 F rd [4:0] $end
+$scope begin $ivl_for_loop1 $end
+$var integer 32 G i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11111111111111111111111111111111 G
+bz F
+bz E
+bz000000000000 D
+b0 C
+bz B
+b0 A
+b0 @
+bz ?
+bz >
+b0 =
+b0 <
+bz ;
+bz :
+bz 9
+bz 8
+bz0 7
+bz 6
+b0 5
+bz 4
+b0 3
+bz 2
+bz 1
+bz 0
+bz /
+bz .
+bz -
+bz ,
+bz +
+bz *
+b0 )
+bz (
+bz '
+bz &
+bz %
+bz $
+bz #
+bx "
+bz !
+$end

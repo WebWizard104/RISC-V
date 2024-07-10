@@ -1,0 +1,67 @@
+$date
+	Sun Jul  7 23:05:00 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module store $end
+$var wire 1 ! i_clk $end
+$var wire 1 " i_rst $end
+$var wire 32 # imm [31:0] $end
+$var wire 32 $ rs1_val [31:0] $end
+$var wire 32 % rs2_val [31:0] $end
+$var wire 3 & store_control [2:0] $end
+$var reg 1 ' ignore_curr_inst $end
+$var reg 32 ( mem_addr [31:0] $end
+$var reg 4 ) mem_byte_en [3:0] $end
+$var reg 1 * mem_rw_mode $end
+$var reg 32 + mem_write_data [31:0] $end
+$var reg 1 , stall_pc $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0,
+b0 +
+1*
+b0 )
+b0 (
+x'
+b0 &
+b0 %
+b0 $
+b0 #
+1"
+0!
+$end
+#5000
+0'
+1!
+#5500
+0"
+0!
+#6000
+1!
+#6500
+0!
+#7000
+1"
+1!
+#7500
+0!
+#8000
+1!
+#8100
+b11 )
+b111111001111011011111100110 +
+b111101001001100111101001000001 (
+0*
+1,
+b10 &
+b101101 #
+b111111001111011011111100110 %
+b111101001001100111101000010100 $
+#8201
